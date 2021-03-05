@@ -9,6 +9,9 @@ dotenv.config({ path: '../.env' });
 var app = express();
 var port = process.env.PORT;
 
+// setup routers
+app.use(require('./routers/statusRouter.js'));
+
 // start server
 app.listen(port, function () {
   console.log('Running on port ' + port);
