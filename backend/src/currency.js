@@ -16,5 +16,5 @@ https.get(options, function (res) {
     var jsonResponse = JSON.parse(dataResponse);
     console.log("1 USD = " + jsonResponse.USD_GBP + " GBP");
   });
-  //error catching should probaby go here
+  //error catching should probably go here
 });
