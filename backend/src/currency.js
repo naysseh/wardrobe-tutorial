@@ -12,8 +12,13 @@ https.get(newURL, function (res) {
     var jsonResponse = JSON.parse(dataResponse);
     console.log("1 USD = " + jsonResponse.USD_GBP + " GBP");
   });
+<<<<<<< HEAD
   res.on('error', function (err) {
     console.error(err);
   })
   //error catching should probaby go here
 });
+=======
+  //error catching should probably go here
+});
+>>>>>>> 23cf3953d4cdd1c4bda73b185894942d1c105e02
