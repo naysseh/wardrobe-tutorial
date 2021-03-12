@@ -10,7 +10,8 @@ http.get(url, function (res) {
 
   res.on('end', function () {
     var bitcoinRes = JSON.parse(body);
-    console.log("JSON response recieved: ", bitcoinRes.bpi.USD.rate);
+    var value = bitcoinRes.bpi.USD.rate;
+    console.log("1 BTC = $" + value + " (USD)");
   });
 
 }).on('error', function (err) {
