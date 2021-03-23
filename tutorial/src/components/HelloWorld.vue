@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/squidward.png')"
           class="my-3"
           contain
           height="200"
@@ -12,16 +12,16 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          Welcome to Natasha's Project
         </h1>
 
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
+          if you'd like to speak to me more follow my
           <a
-            href="https://community.vuetifyjs.com"
+            href="https://instagram.com/natashaaysseh"
             target="_blank"
-          >Discord Community</a>
+          >instagram</a>
+          <br> if you dare 😐🤨
         </p>
       </v-col>
 
@@ -30,23 +30,26 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          What's next?
+          a small cow 🐄
         </h2>
 
         <v-row justify="center">
+
           <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
+            href="https://en.wikipedia.org/wiki/Cattle"
             target="_blank"
           >
-            {{ next.text }}
-          </a>
+          <v-img
+          :src="require('../assets/cow.png')"
+          class="my-3"
+          contain
+          height="50"
+        />
+        </a>
         </v-row>
       </v-col>
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -65,14 +68,14 @@
             {{ link.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
 
       <v-col
         class="mb-5"
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
+          links that you may want
         </h2>
 
         <v-row justify="center">
@@ -98,16 +101,12 @@
     data: () => ({
       ecosystem: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
+          text: 'google if you forgot the link',
+          href: 'https://google.com',
         },
         {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
+          text: 'the cornell website',
+          href: 'https://cornell.edu',
         },
       ],
       importantLinks: [

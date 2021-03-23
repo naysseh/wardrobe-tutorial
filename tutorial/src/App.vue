@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="deep-purple"
+      color="pink"
       dark
     >
     <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
@@ -26,6 +26,13 @@
             target="_blank"
           >a link!</a></v-list-item-title>
             </v-list-item>
+            <v-list-item>
+              <v-list-item-title><a
+            href=
+            "https://open.spotify.com/user/naysseh?si=3D_2di_PShyknF278d8k5Q"
+            target="_blank"
+          >my spotify!</a></v-list-item-title>
+            </v-list-item>
           </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -35,25 +42,26 @@
     </v-main>
   </v-app>
 </template>
-å
+
 <script>
+// export default {
+//   data: () => ({
+//     drawer: false,
+//     group: null,
+//     }),
+//   };
+import HelloWorld from './components/HelloWorld';
+
 export default {
+  name: 'App',
+
+  components: {
+    HelloWorld,
+  },
+
   data: () => ({
     drawer: false,
     group: null,
-    }),
-    }
-// import HelloWorld from './components/HelloWorld';
-
-// export default {
-//   name: 'App',
-
-//   components: {
-//     HelloWorld,
-//   },
-
-//   data: () => ({
-//     //
-//   }),
-// };
+  }),
+};
 </script>
